@@ -1,5 +1,10 @@
 // Agency Theme JavaScript
 
+    $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+
+
 (function($) {
     "use strict"; // Start of use strict
 
@@ -11,7 +16,6 @@
         }, 1250, 'easeInOutExpo');
         event.preventDefault();
     });
-
     // Highlight the top nav as scrolling occurs
     $('body').scrollspy({
         target: '.navbar-fixed-top',
@@ -30,6 +34,7 @@
         }
     })
 
+/*
     var map;
     function init() {
         var univer = new google.maps.LatLng(37.9365863, 22.9307507);
@@ -75,7 +80,6 @@
 
 
     google.maps.event.addDomListener(window,"load",init),google.maps.event.addDomListener(window,"resize",function(){map.setCenter(new google.maps.LatLng(37.9365863,(22.9307507)))});
-/*
     var e={zoom:15,center:
         new google.maps.LatLng(40.67,(-73.94)),
         disableDefaultUI:!0,
