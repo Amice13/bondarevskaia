@@ -146,9 +146,9 @@
 	            <div class="row">
 	                <div class="col-sm-12 portfolio-item">
 	                    <dl class="dl-horizontal">
-	                      <dt class="icon icon-primary"><i class="fa fa-language awesome-circle" aria-hidden="true"></i></dt>
+	                      <dt class="icon icon-primary"><i class="fa fa-language" aria-hidden="true"></i></dt>
 	                      <dd>Seminar proceedings will be published in English with ISBN.</dd>
-	                      <dt class="icon icon-primary"><i class="fa fa-text" aria-hidden="true"></i></dt>
+	                      <dt class="icon icon-primary"><i class="fa fa-file-text" aria-hidden="true"></i></dt>
 	                      <dd>Short articles guidelines: 1200 – 1500 words, please avoid footnotes, figures and bibliography. References should be inserted in the text (surname, year). On the top of articles: authors’ name and surname, scientific degree, title, position, affiliation.</dd>
 	                      <dt class="icon icon-primary"><i class="fa fa-book" aria-hidden="true"></i></dt>
 	                      <dd><span class="underline">Theoretical study</span> should include: 1) introduction, 2) objectives, 3) results, 4) conclusions.</dd>
@@ -381,7 +381,7 @@
     <style type="text/css">
     	.bg-light-gray { background: #F6F7FB; padding: 40px 0px; margin: 40px 0px; }
 
-    	@media screen and (min-width: 280px) {
+    	@media screen and (max-width: 600px) {
 		    .brand h3 {
 		        font-size: 1.5em !important;
 		    }
@@ -398,7 +398,20 @@
 		    	max-width: 80%;
 		    	margin: auto;
 		    }
+
+		    dl dt {
+		    	width: 10%;
+		    	float: left;
+		    	display: inline-block;
+		    }
+
+		    dl dd {
+		    	width: 90%;
+		    	padding-left: 10%;
+		    	padding-bottom: 15px;
+		    }
 		}
+
     </style>
 </body>
 
